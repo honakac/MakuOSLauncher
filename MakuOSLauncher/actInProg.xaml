@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ui:ContentDialog x:Class="MakuOSLauncher.actInProg" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ui="http://schemas.modernwpf.com/2019" Title="MakuOS Launcher" DefaultButton="Close" xmlns:makuoslauncher="clr-namespace:MakuOSLauncher;assembly=MakuOS Launcher">
+  <StackPanel Name="stp" Height="103">
+    <TextBlock Name="textBlock" Text="Пожалуйста подождите, пока MakuOS Launcher активирует вашу систему..." TextWrapping="Wrap" Height="82" Width="354" FontSize="16" />
+    <ui:ProgressBar Name="ILOVEMAKUOS" Width="354" FontSize="14" Height="17" IsIndeterminate="True" />
+  </StackPanel>
+</ui:ContentDialog>

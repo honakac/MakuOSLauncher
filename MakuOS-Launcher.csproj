@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>MakuOS Launcher</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="funny1.png" />
+    <None Remove="hand_heart_donate_icon.png" />
+    <None Remove="you-tube-16.png" />
+    <None Remove="funny.png" />
+    <None Remove="favicon-20-1-.ico" />
+    <None Remove="makut256.png" />
+    <None Remove="favicon.ico" />
+    <None Remove="telegram_2019_logo.svg.png" />
+    <None Remove="MakuOSLauncher.HWID.cmd" />
+    <EmbeddedResource Include="funny1.png" LogicalName="funny1.png" />
+    <EmbeddedResource Include="hand_heart_donate_icon.png" LogicalName="hand_heart_donate_icon.png" />
+    <EmbeddedResource Include="you-tube-16.png" LogicalName="you-tube-16.png" />
+    <EmbeddedResource Include="funny.png" LogicalName="funny.png" />
+    <EmbeddedResource Include="favicon-20-1-.ico" LogicalName="favicon%20(1).ico" />
+    <EmbeddedResource Include="makut256.png" LogicalName="makut256.png" />
+    <EmbeddedResource Include="favicon.ico" LogicalName="favicon.ico" />
+    <EmbeddedResource Include="telegram_2019_logo.svg.png" LogicalName="telegram_2019_logo.svg.png" />
+    <EmbeddedResource Include="MakuOSLauncher.HWID.cmd" LogicalName="MakuOSLauncher.HWID.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ModernWpf.Controls">
+      <HintPath>ModernWpf.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernWpf">
+      <HintPath>ModernWpf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
